@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+
+    <!--登录-->
+    <servlet>
+        <servlet-name>loginServlet</servlet-name>
+        <servlet-class>com.jhhg.nova.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>loginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+        <url-pattern>/lin</url-pattern>
+    </servlet-mapping>
+    <!--首页-->
+    <servlet>
+        <servlet-name>indexServlet</servlet-name>
+        <servlet-class>com.jhhg.nova.servlet.IndexServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>indexServlet</servlet-name>
+        <url-pattern>/index</url-pattern>
+    </servlet-mapping>
+    <!--404页面-->
+    <servlet>
+        <servlet-name>errorServlet</servlet-name>
+        <servlet-class>com.jhhg.nova.servlet.ErrorServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>errorServlet</servlet-name>
+        <url-pattern>/error</url-pattern>
+        <url-pattern>/errors</url-pattern>
+        <url-pattern>/err</url-pattern>
+    </servlet-mapping>
+</web-app>
